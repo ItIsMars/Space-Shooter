@@ -118,11 +118,20 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="AboutButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="ShopButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ShopButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GameTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>GameTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AboutButton1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>AboutButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SettingsButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>SettingsButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExitButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ExitButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="PlayButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>PlayButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -130,19 +139,28 @@
   <data name="SettingsButton1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>SettingsButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PlayButton1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>PlayButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="AboutButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>AboutButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MusicButton_Enabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>MusicButton_Enabled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GameTitle1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>GameTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ShopButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>ShopButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="PlayButton1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>PlayButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GameTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>GameTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="MusicButton_Disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>MusicButton_Disabled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ExitButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>ExitButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="AboutPageBackButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>AboutPageBackButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SoundEffectsButton_Enabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>SoundEffectsButton_Enabled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SoundEffectsButton_Disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>SoundEffectsButton_Disabled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

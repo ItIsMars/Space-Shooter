@@ -73,6 +73,26 @@ namespace Space_Shooter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AboutButton1 {
+            get {
+                object obj = ResourceManager.GetObject("AboutButton1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap AboutPageBackButton {
+            get {
+                object obj = ResourceManager.GetObject("AboutPageBackButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ExitButton {
             get {
                 object obj = ResourceManager.GetObject("ExitButton", resourceCulture);
@@ -96,6 +116,26 @@ namespace Space_Shooter.Properties {
         internal static System.Drawing.Bitmap GameTitle1 {
             get {
                 object obj = ResourceManager.GetObject("GameTitle1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MusicButton_Disabled {
+            get {
+                object obj = ResourceManager.GetObject("MusicButton_Disabled", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MusicButton_Enabled {
+            get {
+                object obj = ResourceManager.GetObject("MusicButton_Enabled", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -146,6 +186,26 @@ namespace Space_Shooter.Properties {
         internal static System.Drawing.Bitmap ShopButton {
             get {
                 object obj = ResourceManager.GetObject("ShopButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SoundEffectsButton_Disabled {
+            get {
+                object obj = ResourceManager.GetObject("SoundEffectsButton_Disabled", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SoundEffectsButton_Enabled {
+            get {
+                object obj = ResourceManager.GetObject("SoundEffectsButton_Enabled", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

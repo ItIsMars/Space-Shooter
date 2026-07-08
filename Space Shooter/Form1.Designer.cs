@@ -67,6 +67,7 @@
             buttonExit.Size = new Size(260, 260);
             buttonExit.TabIndex = 5;
             buttonExit.UseVisualStyleBackColor = false;
+            buttonExit.Click += buttonExit_Click;
             // 
             // buttonShop
             // 
@@ -94,6 +95,7 @@
             buttonAbout.Size = new Size(260, 260);
             buttonAbout.TabIndex = 3;
             buttonAbout.UseVisualStyleBackColor = false;
+            buttonAbout.Click += buttonAbout_Click;
             // 
             // buttonSettings
             // 
@@ -108,6 +110,7 @@
             buttonSettings.Size = new Size(260, 260);
             buttonSettings.TabIndex = 2;
             buttonSettings.UseVisualStyleBackColor = false;
+            buttonSettings.Click += buttonSettings_Click;
             // 
             // buttonPlay
             // 
