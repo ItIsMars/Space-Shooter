@@ -7,9 +7,20 @@ namespace Space_Shooter
 {
     public partial class Form1 : Form
     {
+        private GameEngine engine;
+        private System.Windows.Forms.Timer renderTimer = new System.Windows.Forms.Timer();
         public Form1()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.DoubleBuffered = true;
+            this.KeyPreview = true;
+            renderTimer.Interval = 20;
+            renderTimer.Tick += (s, e) => { this.Invalidate(); };
+            renderTimer.Start();
+
+
         }
 
         public static SoundPlayer menuMusic = new SoundPlayer("MainMenuThemeMusic.wav");
@@ -28,10 +39,43 @@ namespace Space_Shooter
             }
         }
 
+
+        //private void Form1_KeyDown(object sender, KeyEventArgs e)
+        //{
+        //    if (engine == null) return;
+        //    if (e.KeyCode == Keys.Left) engine.IsMovingLeft = true;
+        //    if (e.KeyCode == Keys.Right) engine.IsMovingRight = true;
+        //    if (e.KeyCode == Keys.Down) engine.IsMovingDown = true;
+        //    if (e.KeyCode == Keys.Up) engine.IsMovingUp = true;
+        //}
+        //private void Form1_KeyUp(object sender, KeyEventArgs e)
+        //{
+        //    if (engine == null) return;
+        //    if (e.KeyCode == Keys.Left) engine.IsMovingLeft = false;
+        //    if (e.KeyCode == Keys.Right) engine.IsMovingRight = false;
+        //    if (e.KeyCode == Keys.Down) engine.IsMovingDown = false;
+        //    if (e.KeyCode == Keys.Up) engine.IsMovingUp = false;
+
+        //}
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            base.OnPaint(e);
+            if (engine != null)
+            {
+                e.Graphics.FillRectangle(Brushes.White, engine.Player.X, engine.Player.Y, 50, 50);
+            }
+            e.Graphics.DrawString("Score: " + engine.Score, this.Font, Brushes.White, 10, 10);
+            foreach(var coin in engine.coins)
+            {
+                e.Graphics.FillEllipse(Brushes.Gold, coin.X, coin.Y, 20, 20);
+            }
+        }
+
         private void panelMainMenu_Paint(object sender, PaintEventArgs e)
         {
 
         }
+
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -42,12 +86,20 @@ namespace Space_Shooter
         {
             Application.Exit();
         }
+        private void buttonPlay_Click(object sender, EventArgs e)
+        {
+            panelMainMenu.Hide();
+            engine = new GameEngine(this.ClientSize.Width, this.ClientSize.Height);
+            engine.Start();
+            this.Focus();
+            this.KeyPreview = true;
+        }
 
         private void buttonAbout_Click(object sender, EventArgs e)
         {
             // creating the about page
             AboutPage about = new AboutPage();
-
+            about.Dock = DockStyle.Fill;
             //// ۲. هماهنگ کردن اندازه این صفحه با فرم اصلی بازی
             //about.Dock = DockStyle.Fill;
 
@@ -81,6 +133,24 @@ namespace Space_Shooter
             {
                 System.Diagnostics.Debug.WriteLine("Failed to open Settings: " + ex.Message);
             }
+        }
+
+        private void Form1_KeyDown_1(object sender, KeyEventArgs e)
+        {
+            if (engine == null) return;
+            if (e.KeyCode == Keys.Left) engine.IsMovingLeft = true;
+            if (e.KeyCode == Keys.Right) engine.IsMovingRight = true;
+            if (e.KeyCode == Keys.Down) engine.IsMovingDown = true;
+            if (e.KeyCode == Keys.Up) engine.IsMovingUp = true;
+        }
+
+        private void Form1_KeyUp_1(object sender, KeyEventArgs e)
+        {
+            if (engine == null) return;
+            if (e.KeyCode == Keys.Left) engine.IsMovingLeft = false;
+            if (e.KeyCode == Keys.Right) engine.IsMovingRight = false;
+            if (e.KeyCode == Keys.Down) engine.IsMovingDown = false;
+            if (e.KeyCode == Keys.Up) engine.IsMovingUp = false;
         }
     }
 }
