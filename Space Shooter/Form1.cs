@@ -62,7 +62,11 @@ namespace Space_Shooter
             base.OnPaint(e);
             if (engine != null)
             {
-                e.Graphics.FillRectangle(Brushes.White, engine.Player.X, engine.Player.Y, 50, 50);
+                this.BackColor = Color.FromArgb(0, 0, 30); 
+
+                Image shipImage = Properties.Resources.ShipImage;
+
+                e.Graphics.DrawImage(shipImage, engine.Player.X, engine.Player.Y, 65, 65);
             }
             e.Graphics.DrawString("Score: " + engine.Score, this.Font, Brushes.White, 10, 10);
             foreach(var coin in engine.coins)
